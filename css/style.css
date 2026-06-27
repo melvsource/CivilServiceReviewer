@@ -419,3 +419,296 @@ nav a:hover{
     color:#6b7280;
 
 }
+/* ==========================
+        SUBJECTS
+========================== */
+
+.subjects{
+
+    padding:90px 0;
+
+    background:#eef3fa;
+
+}
+
+.subjects h2{
+
+    text-align:center;
+
+    font-family:'Merriweather',serif;
+
+    color:#0F2D52;
+
+    font-size:2.2rem;
+
+    margin-bottom:60px;
+
+}
+
+.subject-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.subject-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.subject-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.subject-card h3{
+
+    color:#0F2D52;
+
+    margin-bottom:18px;
+
+}
+
+.subject-card p{
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+    flex:1;
+
+}
+
+.subject-card button{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#0F2D52;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.subject-card button:hover{
+
+    background:#1e4f8a;
+
+}
+
+/* ==========================
+        CTA
+========================== */
+
+.cta{
+
+    padding:100px 0;
+
+    text-align:center;
+
+    background:#0F2D52;
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-family:'Merriweather',serif;
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+    color:#dbe6f3;
+
+}
+
+.cta .primary-btn{
+
+    background:#D4AF37;
+
+    color:#0F2D52;
+
+}
+
+.cta .primary-btn:hover{
+
+    background:#f0c958;
+
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+footer{
+
+    background:#091b34;
+
+    color:white;
+
+    padding:45px 0;
+
+}
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer h3{
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#b8c5d6;
+
+}
+
+/* ==========================
+        ANIMATION
+========================== */
+
+.card,
+.subject-card,
+.hero-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media(max-width:980px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.footer{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:2.3rem;
+
+}
+
+.features,
+.subjects,
+.cta{
+
+padding:70px 0;
+
+}
+
+.stats{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+}
